@@ -28,3 +28,9 @@ Prometheus + Grafana + Alertmanager
    ```bash
    git clone https://github.com/yourname/monitoring-stack.git
    cd monitoring-stack
+3. Запустить стек:
+   ```bash
+   docker compose up -d
+4. Остановить стек при необходимости:
+   ```bash
+   docker compose down      
