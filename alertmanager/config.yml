@@ -1,0 +1,15 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  receiver: 'email-notifications'
+
+receivers:
+  - name: 'email-notifications'
+    email_configs:
+      - to: 'your@email.com'
+        from: 'monitor@example.com'
+        smarthost: 'smtp.example.com:587'
+        auth_username: 'monitor@example.com'
+        auth_identity: 'monitor@example.com'
+        auth_password: 'yourpassword'
